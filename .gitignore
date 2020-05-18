@@ -1,0 +1,9 @@
+rules.zip
+yara
+PEiD
+__pycache__
+.mypy_cache/
+*.egg-info/
+tests/rules
+dist
+.venv

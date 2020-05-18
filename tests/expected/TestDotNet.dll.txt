@@ -1,0 +1,8 @@
+  PE : 32 bit
+  DLL : no
+  Packed : no
+  Anti-Debug : no
+  GUI Program : no
+  Console Program : yes
+  contains base64
+  PEiD : ["Microsoft_Visual_Studio_NET" "Microsoft_Visual_C_v70_Basic_NET_additional" "Microsoft_Visual_C_Basic_NET" "Microsoft_Visual_Studio_NET_additional" "Microsoft_Visual_C_v70_Basic_NET" "NET_executable_" "NET_executable"]

@@ -1,0 +1,8 @@
+  PE : 32 bit
+  DLL : no
+  Packed : no
+  Anti-Debug : yes
+  GUI Program : no
+  Console Program : yes
+  contains base64
+  PEiD : ["VC8_Microsoft_Corporation" "Microsoft_Visual_Cpp_8"]
