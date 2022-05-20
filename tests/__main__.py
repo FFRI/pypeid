@@ -1,3 +1,6 @@
+#
+# (c) FFRI Security, Inc., 2020-2022 / Author: FFRI Security, Inc.
+#
 import sys
 import os
 import subprocess

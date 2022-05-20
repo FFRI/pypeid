@@ -1,5 +1,7 @@
+#
+# (c) FFRI Security, Inc., 2020-2022 / Author: FFRI Security, Inc.
+#
 import yara
-import sys
 import logging
 import traceback
 import os

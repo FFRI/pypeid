@@ -1,3 +1,6 @@
+#
+# (c) FFRI Security, Inc., 2020-2022 / Author: FFRI Security, Inc.
+#
 def main() -> None:
     import sys
     from .scanner import PEiDScanner, format_as_katc_peid

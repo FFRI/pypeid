@@ -1,9 +1,8 @@
-import csv
-import subprocess
-import sys
+#
+# (c) FFRI Security, Inc., 2020-2022 / Author: FFRI Security, Inc.
+#
 import os
 import pytest
-from typing import Optional, List
 from pypeid import PEiDScanner, format_as_katc_peid
 
 
