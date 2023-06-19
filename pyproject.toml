@@ -1,22 +1,23 @@
 [tool.poetry]
 name = "pypeid"
-version = "0.1.1"
+version = "0.1.2"
 description = "Yet another implementation of PEiD with yara-python"
 authors = ["Koh Nakagawa <tsunekou1019@gmail.com>"]
 license = "Apache License 2.0"
+readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.7,<3.11"
-yara-python = "^4.2.0"
+python = "^3.11"
+yara-python = "^4.3.0"
 
-[tool.poetry.dev-dependencies]
-mypy = "^0.942"
-black = "^22.3.0"
-pytest = "^7.1.1"
-isort = "^5.10.1"
-pip-licenses = "^3.5.3"
-requests = "^2.27.1"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.1.1"
+pytest = "^7.2.2"
+black = "^23.1.0"
+isort = "^5.12.0"
+requests = "^2.28.2"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

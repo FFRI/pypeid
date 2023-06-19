@@ -6,8 +6,8 @@ Yet another implementation of [PEiD](https://github.com/K-atc/PEiD) with yara-py
 
 ## Requirements
 
-- Python 3.7+
-- poetry
+- Python 3.11
+- Poetry 1.2+
 
 ## Install
 
@@ -17,7 +17,7 @@ $ cd pypeid
 $ poetry shell
 $ poetry install --no-root
 $ poetry build
-$ pip install dist/pypeid-0.1.1-py3-none-any.whl
+$ pip install dist/pypeid-0.1.2-py3-none-any.whl
 $ python
 >>> from pypeid import PEiDScanner
 >>> scanner = PEiDScanner()
@@ -29,20 +29,20 @@ $ python
 
 ```
 $ poetry run pytest
-================================================================ test session starts ================================================================
-platform linux -- Python 3.9.7, pytest-7.1.1, pluggy-1.0.0
+================================================= test session starts ==================================================
+platform linux -- Python 3.11.2, pytest-7.2.2, pluggy-1.0.0
 rootdir: /home/ffri/pypeid
 collected 3 items
 
-tests/test_scanner.py ...                                                                                                                     [100%]
+tests/test_scanner.py ...                                                                                        [100%]
 
-================================================================= 3 passed in 1.79s =================================================================
+================================================== 3 passed in 1.10s ===================================================
 ```
 
 ## Tested platform
 
-- Ubuntu 20.04 on WSL2 & Python 3.9.7
+- Ubuntu 22.04 on WSL2 & Python 3.11.2
 
 ## Author
 
-Koh M. Nakagawa. &copy; FFRI Security, Inc. 2020-2022
+Koh M. Nakagawa. &copy; FFRI Security, Inc. 2020-2023
