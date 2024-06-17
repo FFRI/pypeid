@@ -1,5 +1,5 @@
 #
-# (c) FFRI Security, Inc., 2020-2023 / Author: FFRI Security, Inc.
+# (c) FFRI Security, Inc., 2020-2024 / Author: FFRI Security, Inc.
 #
 import yara
 import logging
@@ -35,13 +35,13 @@ class PEiDScanner:
         matched_rules: List[yara.Match] = list()
         try:
             matched_rules = yara_rule.match(filepath=filepath)
-        except yara.Error as err:
+        except yara.Error:
             err_msg: str = f"yara scan failed. {traceback.format_exc()}"
             if self._logger:
                 self._logger.warning(err_msg)
             else:
                 print(err_msg)
-        except:
+        except:  # noqa: E722
             err_msg: str = f"unknown exception is thrown {traceback.format_exc()}"
             if self._logger:
                 self._logger.error(err_msg)

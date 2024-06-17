@@ -1,5 +1,5 @@
 #
-# (c) FFRI Security, Inc., 2020-2023 / Author: FFRI Security, Inc.
+# (c) FFRI Security, Inc., 2020-2024 / Author: FFRI Security, Inc.
 #
 import sys
 import os
@@ -46,14 +46,14 @@ def get_katc_peid_output(path: str) -> Optional[str]:
         .split("\n")[:-1]
     )
 
-    if any("WARN" in l for l in output_lines):
+    if any("WARN" in line for line in output_lines):
         print("Error occurs.", file=sys.stderr)
         return None
 
     return "\n".join(
-        l
-        for l in output_lines
-        if "INFO" not in l and "=>" not in l and "RULES_FILE" not in l
+        line
+        for line in output_lines
+        if "INFO" not in line and "=>" not in line and "RULES_FILE" not in line
     )
 
 
